@@ -1,0 +1,15 @@
+﻿<Window x:Class="Tower_Defense.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tower_Defense"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Loaded="loaded">
+        <Grid.Background>
+            <ImageBrush ImageSource="https://vignette.wikia.nocookie.net/bloons-tower-defense-force/images/5/5a/BTDTrack.png/revision/latest?cb=20190316010553"/>
+        </Grid.Background>
+
+    </Grid>
+</Window>
