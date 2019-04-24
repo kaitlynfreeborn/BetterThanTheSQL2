@@ -10,7 +10,11 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://vignette.wikia.nocookie.net/bloons-tower-defense-force/images/5/5a/BTDTrack.png/revision/latest?cb=20190316010553"/>
         </Grid.Background>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="104,320,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="288,258,0,0" VerticalAlignment="Top" Width="100" Source="http://pixeljoint.com/files/icons/full/gorilla_3x.gif"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="602,55,0,0" VerticalAlignment="Top" Width="100" Source="http://pixeljoint.com/files/icons/full/gorilla_3x.gif"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="75,10,0,0" VerticalAlignment="Top" Width="100" Source="http://pixeljoint.com/files/icons/full/gorilla_3x.gif"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="600,256,0,0" VerticalAlignment="Top" Width="100" Source="http://pixeljoint.com/files/icons/full/gorilla_3x.gif"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="10,152,0,0" VerticalAlignment="Top" Width="100" Source="https://thumbs.gfycat.com/CalmCanineAntelopegroundsquirrel-size_restricted.gif"/>
 
     </Grid>
 </Window>
