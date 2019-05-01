@@ -15,9 +15,11 @@ namespace PizzaPickUp.Controllers
         }
 
         List<BuildController> size = new List<BuildController>();
-        size.Add(Small: Serves 1-2));
-        size.Add(Medium: Serves 2-3));
-        size.Add(Large: Serves 3-4));
+        size.Add(Small);
+        size.Add(Medium);
+        size.Add(Large);
+
+        List
 
    
 
