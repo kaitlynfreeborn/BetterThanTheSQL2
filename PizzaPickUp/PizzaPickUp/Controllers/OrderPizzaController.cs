@@ -61,8 +61,6 @@ namespace PizzaPickUp.Controllers
             };
 
 
-
-
             List<Order> od = new List<Order>();
             od.Add(cheesePizza);
             od.Add(pPizza);
@@ -72,6 +70,7 @@ namespace PizzaPickUp.Controllers
             od.Add(carbonara);
 
             return View(od);
+            
 
         }
     }
