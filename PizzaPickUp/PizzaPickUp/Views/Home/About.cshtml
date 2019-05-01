@@ -9,12 +9,10 @@
     <title>>>Our Location<<</title>
     <h2 style="text-align:center"><b>Location</b></h2>
     <style>
-         /* Always set the map height explicitly to define the size of the div
-        * element that contains the map. */
          #map {
              height: 60%;
          }
-         /* Optional: Makes the sample page fill the window. */
+
          html, body {
              height: 100%;
              margin: 0;
@@ -39,38 +37,6 @@
 
 <body style="background-color:black; color:white;">
 
-    <div id="floating-panel">
-        <b>Start: </b>
-        <select id="start">
-            <option value="chicago, il">Chicago</option>
-            <option value="st louis, mo">St Louis</option>
-            <option value="joplin, mo">Joplin, MO</option>
-            <option value="oklahoma city, ok">Oklahoma City</option>
-            <option value="amarillo, tx">Amarillo</option>
-            <option value="gallup, nm">Gallup, NM</option>
-            <option value="flagstaff, az">Flagstaff, AZ</option>
-            <option value="winona, az">Winona</option>
-            <option value="kingman, az">Kingman</option>
-            <option value="barstow, ca">Barstow</option>
-            <option value="san bernardino, ca">San Bernardino</option>
-            <option value="los angeles, ca">Los Angeles</option>
-        </select>
-        <b>End: </b>
-        <select id="end">
-            <option value="chicago, il">Chicago</option>
-            <option value="st louis, mo">St Louis</option>
-            <option value="joplin, mo">Joplin, MO</option>
-            <option value="oklahoma city, ok">Oklahoma City</option>
-            <option value="amarillo, tx">Amarillo</option>
-            <option value="gallup, nm">Gallup, NM</option>
-            <option value="flagstaff, az">Flagstaff, AZ</option>
-            <option value="winona, az">Winona</option>
-            <option value="kingman, az">Kingman</option>
-            <option value="barstow, ca">Barstow</option>
-            <option value="san bernardino, ca">San Bernardino</option>
-            <option value="los angeles, ca">Los Angeles</option>
-        </select>
-    </div>
     <div id="map"></div>
     <script>
         function initMap() {
@@ -89,40 +55,29 @@
             document.getElementById('end').addEventListener('change', onChangeHandler);
         }
 
-        function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-            directionsService.route({
-                origin: document.getElementById('start').value,
-                destination: document.getElementById('end').value,
-                travelMode: 'DRIVING'
-            }, function (response, status) {
-                if (status === 'OK') {
-                    directionsDisplay.setDirections(response);
-                } else {
-                    window.alert('Directions request failed due to ' + status);
-                }
-            });
-        }
+        //function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        //    directionsService.route({
+        //        origin: document.getElementById('start').value,
+        //        destination: document.getElementById('end').value,
+        //        travelMode: 'DRIVING'
+        //    }, function (response, status) {
+        //        if (status === 'OK') {
+        //            directionsDisplay.setDirections(response);
+        //        } else {
+        //            window.alert('Directions request failed due to ' + status);
+        //        }
+        //    });
+        //}
     </script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLKsdTWqOSaPfjb3wS5AV3fTl6SRmtggs&callback=initMap">
     </script>
-    @*<div class="container" align="center">
-            <h2 align="center" style="font-size:50px; color:white;"><b>ABOUT US</b></h2>
-        </div>*@
-
-    @*<div class="center-block" style="height:auto; width:auto;" align="center">
-            <h3>>>Our location<<</h3>
-            <img src="~/map.jpg" style="width:80%; height:100%" alt="map">
-        </div>*@
-
-
-
 
     <div>
         <h3><strong>Contact:</strong></h3>
         <address>
-            N University Ave 2019<br />
-            Norman, OK 73072<br />
+            577 Buchanan Ave<br />
+            Norman, OK 73069<br />
         </address>
     </div>
 
