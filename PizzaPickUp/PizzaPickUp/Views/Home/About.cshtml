@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<PizzaPickUp.Models.Menu>
+@{
     ViewBag.Title = "About";
 }
 <!DOCTYPE html>
@@ -6,33 +7,34 @@
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>>>Our Location<<</title>
-    <h2 style="text-align:center"><b>Location</b></h2>
+    <title></title>
+    <h2 align="center" style="font-size:50px; color:white;"><b>LOCATION</b></h2>
+    <h3 style="text-align:center"><b>>>Our Store<<</b></h3>
     <style>
-         #map {
-             height: 60%;
-             width:100%;
-         }
+        #map {
+            height: 60%;
+            width: 100%;
+        }
 
-         html, body {
-             height: 100%;
-             margin: 0;
-             padding: 0;
-         }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
 
-         #floating-panel {
-             position: absolute;
-             top: 10px;
-             left: 25%;
-             z-index: 5;
-             background-color: #fff;
-             padding: 5px;
-             border: 1px solid #999;
-             text-align: center;
-             font-family: 'Roboto','sans-serif';
-             line-height: 30px;
-             padding-left: 10px;
-         }
+        #floating-panel {
+            position: absolute;
+            top: 10px;
+            left: 25%;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+            text-align: center;
+            font-family: 'Roboto','sans-serif';
+            line-height: 30px;
+            padding-left: 10px;
+        }
     </style>
 </head>
 
@@ -52,23 +54,9 @@
             var onChangeHandler = function () {
                 calculateAndDisplayRoute(directionsService, directionsDisplay);
             };
-            document.getElementById('start').addEventListener('change', onChangeHandler);
-            document.getElementById('end').addEventListener('change', onChangeHandler);
+
         }
 
-        //function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-        //    directionsService.route({
-        //        origin: document.getElementById('start').value,
-        //        destination: document.getElementById('end').value,
-        //        travelMode: 'DRIVING'
-        //    }, function (response, status) {
-        //        if (status === 'OK') {
-        //            directionsDisplay.setDirections(response);
-        //        } else {
-        //            window.alert('Directions request failed due to ' + status);
-        //        }
-        //    });
-        //}
     </script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLKsdTWqOSaPfjb3wS5AV3fTl6SRmtggs&callback=initMap">
