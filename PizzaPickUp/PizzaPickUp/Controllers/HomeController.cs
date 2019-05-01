@@ -26,5 +26,12 @@ namespace PizzaPickUp.Controllers
 
             return View();
         }
+
+        public ActionResult Build()
+        {
+            ViewBag.Message = "Build your own pizza page.";
+
+            return View();
+        }
     }
 }
