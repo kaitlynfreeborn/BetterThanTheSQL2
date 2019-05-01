@@ -74,8 +74,31 @@ namespace PizzaPickUp.Controllers
 
         }
 
-        public ActionResult addOrder()
+
+        public ActionResult OrderList()
         {
+            OrderBusinessLayer OBL = new OrderBusinessLayer();
+            List<PlaceOrder> orders = OBL.Orders.ToList<PlaceOrder>();
+            return View(orders);
+        }
+
+        [HttpGet]
+        public ActionResult placeOrder()
+        {
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult placeOrder(int id, int quantity, int price)
+        {
+            OrderBusinessLayer OBL = new OrderBusinessLayer();
+            PlaceOrder ord = new PlaceOrder();
+            ord.OrderID = id;
+            ord.Quantity = quantity;
+            ord.Price = price;
+
+            OBL.addOrder(ord);
 
             return View();
         }
