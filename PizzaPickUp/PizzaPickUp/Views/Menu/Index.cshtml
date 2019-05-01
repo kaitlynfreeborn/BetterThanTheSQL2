@@ -1,0 +1,37 @@
+﻿@model List<PizzaPickUp.Models.Menu>
+@{
+    ViewBag.Title = "Menu";
+}
+<body style="background-color:black; color:white;">
+
+
+    <div class="container" align="center">
+        <h2 align="center" style="font-size:50px; color:white;"><b>MENU</b></h2>
+        <div class="col-lg-3" style="align-items:center;"></div>
+        @foreach (var mn in Model)
+        {
+            <div class="row" style="align-items:center;">
+                <div class="card" style="border: double black 5px; margin: 15px; min-width: 225px">
+                    <img src="@mn.itemImg" class="card-img-top" alt="..." />
+                    <div class="card-body" style="border-color:darkblue; background-color:antiquewhite;">
+                        <div class="card border-info mb-3" style="width: 30rem; border:medium; border-color:darkblue; ">
+                            <h5 class="card-title" style="font-size:50px;">
+                                <b>@mn.itemName</b> @String.Format("{0:C}", mn.itemPrice)
+                            </h5>
+
+                            <p class="card-text" style="font-size:25px;">
+                                @mn.description
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-left:6em;">
+                <h2> @Html.ActionLink("Book your room here!", "AddReservation", "Reservations")</h2>
+            </div>
+        }
+    </div>
+
+
+</body>
