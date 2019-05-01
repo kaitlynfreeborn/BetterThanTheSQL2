@@ -14,13 +14,16 @@ namespace PizzaPickUp.Controllers
             return View();
         }
 
-        List<BuildController> size = new List<BuildController>();
-        size.Add(Small);
-        size.Add(Medium);
-        size.Add(Large);
+        List<Models.Build> Size = new List<Models.Build>();
+        Size.Add(Small);
+        Size.Add(Medium);
+        Size.Add(Large);
 
-        List
-
+        List<Models.Build> Topping = new List<Models.Build>();
+        Topping.Add(Meats);
+        Topping.Add(Cheeses);
+        Topping.Add();
+        Topping.Add(Small);
    
 
         //public Topping Get()
