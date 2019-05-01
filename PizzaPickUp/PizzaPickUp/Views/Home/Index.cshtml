@@ -2,29 +2,32 @@
     ViewBag.Title = "Home Page";
 }
 
-<h2 style="text-align:center; font-size:5px"><b>Welcome to the Pizza Pickup!</b></h2>
+
 <body style="background-color:black; color:white;">
     <div class="containter">
-        <div id="pizzaShop" class="people" data-ride="carousel">
+        <h2 style="text-align:center; font-size:50px"><b>Welcome to the Pizza Pickup!</b></h2>
+    
+            <div id="pizzaShop" class="people" data-ride="carousel" >
 
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="https://static1.squarespace.com/static/5740a666356fb0ac05b2b01c/5964f52c1b631b9e66de98b8/5964f52eb8a79b22784035c0/1499788592901/Pizza+Pickup+Pizza+Restaurant+in+Peckham.jpg" style="width:100%; height:30%" alt="artisanPizza">
+                <div class="carousel-inner" style="height:600px; width:auto;" align="center">
+                    <div class="item active">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="https://static1.squarespace.com/static/5740a666356fb0ac05b2b01c/5964f52c1b631b9e66de98b8/5964f52eb8a79b22784035c0/1499788592901/Pizza+Pickup+Pizza+Restaurant+in+Peckham.jpg" style="width:auto; height:30%" alt="artisanPizza">
+                    </div>
+                    <div class="item">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="https://img.grouponcdn.com/deal/ncHmhjLsxJHkNjbaZQsJ/tu-1600x960/v1/c700x420.jpg" style="width:auto; height:30%" alt="ovenPizza">
+                    </div>
+                    <div class="item">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="http://mangiabrickovenpizza.com/wp-content/uploads/2017/09/pizza-dough-toss.jpg" style="width:auto; height:30%" alt="dough">
+                    </div>
                 </div>
-                <div class="item">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="https://img.grouponcdn.com/deal/ncHmhjLsxJHkNjbaZQsJ/tu-1600x960/v1/c700x420.jpg" style="width:100%; height:30%" alt="ovenPizza">
-                </div>
-                <div class="item">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="http://mangiabrickovenpizza.com/wp-content/uploads/2017/09/pizza-dough-toss.jpg" style="width:100%; height:30%" alt="dough">
-                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
             </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        </div>
+        
+    </div>
 </body>

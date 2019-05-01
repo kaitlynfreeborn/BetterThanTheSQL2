@@ -38,9 +38,9 @@ namespace PizzaPickUp.Controllers
 
             Menu wings = new Menu()
             {
-                itemName = "Meat Lovers Pizza",
-                itemPrice = "13.99",
-                description = "A spicy pizza topped with lots of pepperoni",
+                itemName = "Wings",
+                itemPrice = "14.75",
+                description = "Spicy wings with carrots and celery on the side",
                 itemImg = @"https://banner2.kisspng.com/20180703/awa/kisspng-wild-wing-buffalo-wing-food-meatball-vegetarian-cu-wild-wing-cafe-5b3b77a4e2ca59.2834952515306239089289.jpg"
             };
 
