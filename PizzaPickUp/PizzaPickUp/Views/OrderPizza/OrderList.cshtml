@@ -4,11 +4,9 @@
     ViewBag.Title = "OrderList";
 }
 <body style="background-color:black; color:white">
-    <h2 style="text-align:center">OrderList</h2>
+    <h2 style="text-align:center">Order Queue</h2>
 
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
+ 
     <table class="table">
         <tr>
             <th>
@@ -33,13 +31,9 @@
                     @Html.DisplayFor(modelItem => item.Quantity)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Price)
+                    $@Html.DisplayFor(modelItem => item.Price)
                 </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>
+               
             </tr>
         }
 
