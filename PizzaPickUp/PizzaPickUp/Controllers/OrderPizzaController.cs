@@ -73,5 +73,11 @@ namespace PizzaPickUp.Controllers
             
 
         }
+
+        public ActionResult addOrder()
+        {
+
+            return View();
+        }
     }
 }
