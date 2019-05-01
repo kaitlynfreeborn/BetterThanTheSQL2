@@ -36,11 +36,21 @@ namespace PizzaPickUp.Controllers
                 itemImg = @"http://www.hammockpizza.co/image/cache/pizza/meatlover-pizza-800x800.png"
             };
 
+            Menu wings = new Menu()
+            {
+                itemName = "Wings",
+                itemPrice = "14.75",
+                description = "Spicy wings with carrots and celery on the side",
+                itemImg = @"https://banner2.kisspng.com/20180703/awa/kisspng-wild-wing-buffalo-wing-food-meatball-vegetarian-cu-wild-wing-cafe-5b3b77a4e2ca59.2834952515306239089289.jpg"
+            };
+
+
 
             List<Menu> mn = new List<Menu>();
             mn.Add(cheesePizza);
             mn.Add(pPizza);
             mn.Add(meatPizza);
+            mn.Add(wings);
 
             return View(mn);
         }
